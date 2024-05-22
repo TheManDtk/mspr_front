@@ -1,0 +1,17 @@
+# Traiter tous les fichiers comme des fichiers binaires par défaut
+* -text
+
+# Convertir les fins de ligne CRLF en LF pour les fichiers JavaScript et JSON
+*.js text eol=lf
+*.json text eol=lf
+
+# Convertir les fins de ligne LF en CRLF pour les fichiers HTML et CSS
+*.html text eol=crlf
+*.css text eol=crlf
+
+# Désactiver la conversion de fin de ligne pour les fichiers binaires
+*.png binary
+*.jpg binary
+*.gif binary
+*.mp3 binary
+*.mp4 binary

@@ -1,0 +1,110 @@
+.login-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('D:\\mspr_project\\wildlens_front\\wildfront\\public\\images\\logo_vert.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Applique un flou à l'arrière-plan uniquement */
+  z-index: -1; /* Place l'élément en arrière-plan par rapport aux autres éléments */
+}
+
+.login-page {
+  position: relative; /* Assure que les éléments enfants sont positionnés par rapport à celui-ci */
+  min-height: calc(100vh - 100px); /* Hauteur minimale de la page, ajustée pour tenir compte de la hauteur de la barre de navigation */
+  margin-top: 150px; /* Ajoute de l'espace au-dessus du formulaire pour éviter de se superposer à la barre de navigation */
+  padding-top: 20px;
+}
+
+
+.message-container {
+  position: absolute;
+  top: 60px; /* Décale la div vers le bas par rapport au haut de la page */
+  left: 50%;
+  transform: translateX(-50%); /* Centre horizontalement la div */
+  width: 80%;
+  max-width: 400px;
+}
+.register-link {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px; /* Ajoutez un peu d'espace entre le bouton et le lien */
+}
+
+.success-message,
+.error-message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+.success-message {
+  background-color: #28a745; /* Couleur verte pour les messages de succès */
+  color: #fff;
+}
+
+.error-message {
+  background-color: #dc3545; /* Couleur rouge pour les messages d'erreur */
+  color: #fff;
+}
+
+.login-container {
+  border: 2px solid #28a745;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%; /* Largeur du formulaire sur les grands écrans */
+  max-width: 400px; /* Largeur maximale du formulaire */
+  margin: 50px auto; /* Centrer le formulaire horizontalement et ajouter une marge extérieure */
+  box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur */
+  background-color: rgba(255, 255, 255, 0.8); /* Fond blanc légèrement transparent */
+}
+
+
+
+.login-container label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+h2 {
+  /* Styles pour centrer le texte "Connectez-vous" */
+  text-align: center;
+}
+
+.login-container input {
+  width: calc(100% - 10px); /* Réduire la largeur de 10px pour compenser la marge */
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.login-container .form-group {
+  margin-bottom: 10px; /* Réduire l'espace entre chaque groupe */
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Media query pour les petits écrans */
+@media screen and (max-width: 600px) {
+  .login-container {
+    width: 90%; /* Ajuste la largeur du formulaire pour les petits écrans */
+    margin-top: 20px; /* Réduit la marge extérieure pour les petits écrans */
+    min-width: 200px; /* Largeur minimale du formulaire */
+  }
+}

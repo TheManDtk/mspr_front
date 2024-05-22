@@ -1,0 +1,69 @@
+.register-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('D:\\mspr_project\\wildlens_front\\wildfront\\public\\images\\logo_vert.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Applique un flou à l'arrière-plan uniquement */
+    z-index: -1; 
+}
+
+
+.register-page {
+    position: relative; /* Assure que les éléments enfants sont positionnés par rapport à celui-ci */
+    min-height: calc(100vh - 100px); /* Hauteur minimale de la page, ajustée pour tenir compte de la hauteur de la barre de navigation */
+    margin-top: 150px; /* Ajoute de l'espace au-dessus du formulaire pour éviter de se superposer à la barre de navigation */
+    padding-top: 20px;
+  }
+  
+  .register-container {
+    border: 2px solid #28a745;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%; /* Largeur du formulaire sur les grands écrans */
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 50px auto; /* Centrer le formulaire horizontalement et ajouter une marge extérieure */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc légèrement transparent */
+  }
+  
+  
+  .register-container label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .register-container input {
+    width: calc(100% - 10px); /* Réduire la largeur de 10px pour compenser la marge */
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .register-container .form-group {
+    margin-bottom: 10px; /* Réduire l'espace entre chaque groupe */
+  }
+  
+  .register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Media query pour les petits écrans */
+  @media screen and (max-width: 600px) {
+    .register-container {
+      width: 90%; /* Ajuste la largeur du formulaire pour les petits écrans */
+      margin-top: 20px; /* Réduit la marge extérieure pour les petits écrans */
+      min-width: 200px; /* Largeur minimale du formulaire */
+    }
+  }
+  

@@ -1,0 +1,73 @@
+.back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('D:\\mspr_project\\wildlens_front\\wildfront\\public\\images\\logo_vert.png');
+  background-size: 100px 100px; /*auto Taille automatique de l'image */
+  background-repeat: repeat; /* Répéter l'image horizontalement et verticalement */
+  background-position: center;
+  filter: blur(5px); /* Applique un flou à l'arrière-plan uniquement */
+  z-index:-1 ;
+}
+
+.mes-demandes-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.demandes-table {
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #07812a;
+  border-radius: 10px; /* Bordures arrondies */
+}
+
+.demandes-table th,
+.demandes-table td {
+  padding: 10px; /* Augmentation de l'espacement */
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.demandes-table th {
+  background-color: #28a745;
+}
+
+.demandes-table img {
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .demandes-table th,
+  .demandes-table td {
+    font-size: 12px;
+  }
+}
+
+/* Style pour la colonne Identification */
+.demandes-table td:nth-child(3) {
+  font-style: italic; /* Texte en italique */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Style pour la colonne Correspondance */
+.demandes-table td:nth-child(4) {
+  color: red; /* Texte en rouge */
+  font-weight: bold; /* Texte en gras */
+}

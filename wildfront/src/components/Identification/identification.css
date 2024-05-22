@@ -1,0 +1,81 @@
+.identification-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin-top: 50px; /* Marge en haut */
+}
+
+.identification-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px;
+    max-width: 80%; /* Largeur maximale du contenu */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+
+
+.image-container {
+    flex: 0 0 100px; /* Taille fixe du cadre de l'image */
+    margin-right: 15px; /* Marge entre le cadre de l'image et les informations */
+}
+
+.image-frame {
+    width: 100%;
+    height: 100px; /* Taille fixe du cadre */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Pour cacher tout contenu débordant */
+}
+
+.animal-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Assurez-vous que l'image remplit le cadre sans déformation */
+    object-position: center; /* Centre l'image horizontalement et verticalement */
+}
+
+.section {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments flexibles de passer à la ligne */
+}
+.section-content-probabilite {
+    font-weight: bold;
+    color: red;
+}
+
+
+.info {
+    flex: 1; /* Le reste de l'espace disponible pour les informations */
+    word-wrap: break-word; /* Coupe les mots longs pour les faire tenir dans le conteneur */
+    overflow: hidden; /* Cache tout contenu débordant */
+    text-align: justify;
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.section-description {
+    margin-top: 5px;
+}
+
+/* Media query pour les écrans de taille maximale de 768px */
+@media (max-width: 768px) {
+    .identification-container {
+        max-width: 80%; /* Pour les petits écrans, réduire un peu la largeur */
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: 70%;
+    }
+    .content {
+        margin-top: 10px; /* Réduisez la marge pour les écrans plus petits */
+    }
+    .identification-page {
+        margin-top: 200px; /* Fond gris transparent */
+    }
+}

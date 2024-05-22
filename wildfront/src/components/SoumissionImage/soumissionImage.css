@@ -1,0 +1,162 @@
+.demandes-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('D:\\mspr_project\\wildlens_front\\wildfront\\public\\images\\logo_vert.png');
+  background-size: 100px 100px; /*auto Taille automatique de l'image */
+  background-repeat: repeat; /* Répéter l'image horizontalement et verticalement */
+  background-position: center;
+  filter: blur(5px); /* Applique un flou à l'arrière-plan uniquement */
+  z-index: -1;
+}
+
+.soumission-image-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Hauteur de la page */
+  }
+
+  .cadre {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: relative; /* Position relative pour le cadre */
+  }
+
+  .image-preview {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .message {
+    padding: 10px;
+  }
+
+  .file-upload {
+    display: none;
+  }
+
+  .camera-container {
+    position: absolute; /* Position absolue pour la caméra */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan semi-transparent */
+  }
+
+  .camera-buttons {
+    position: absolute; /* Position absolue pour les boutons de la caméra */
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .button-upload {
+    padding: 8px 16px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+  .button-take-photo {
+    padding: 8px 16px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+  .button-cancel {
+    padding: 8px 16px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .custom-file-upload,
+  .button-upload {
+    margin: 0 5px;
+  }
+
+  .cadre {
+    width: 400px;
+    height: 400px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-file-upload {
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid red;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+  }
+
+  @media screen and (max-width: 480px) {
+    .cadre {
+      width: 150px;
+      height: 250px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+  .camera-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .button-take-photo,
+  .button-cancel {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-take-photo:hover,
+  .button-cancel:hover {
+    background-color: #0056b3;
+  }
+  
